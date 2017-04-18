@@ -1,17 +1,17 @@
 # RatingBar
 
-##[中文版][3]
-##a custom Ratingbar in android
+## [中文版][3]
+## a custom Ratingbar in android
 ![image](https://github.com/hedge-hog/RatingBar/blob/master/ic_demo.png)
 
 # How to use
-###Android Studio：
+### Android Studio：
 ```groovy
     dependencies {
         compile 'com.hedgehog.ratingbar:app:1.1.2'
     }
 ```
-###1，In xml
+### 1，In xml
 
     <com.hedgehog.ratingbar.RatingBar
         android:id="@+id/ratingbar"
@@ -31,7 +31,7 @@
         hedgehog:starImagePadding="20dp"/>
       
 
-###method statement
+### method statement
 | method|    action | 
 | :-------- | :--------|
 |hedgehog:clickable="true"   |Could you click|
@@ -43,12 +43,12 @@
 |hedgehog:starImageHeight="90dp"|the height of the stars|
 |hedgehog:starImageWidth="70dp"|the width of the star|
 |hedgehog:starImagePadding="20dp"|the padding of the star|
-###Don't forget to namespace
+### Don't forget to namespace
 
 ```
 xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
 ```
-###2，In Java code
+### 2，In Java code
 
     ```
        RatingBar mRatingBar = (RatingBar) findViewById(R.id.ratingbar);
@@ -73,7 +73,7 @@ xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
 
         ```
 
-###method statement
+### method statement
 | method      |    action | 
 | :-------- | :--------:|
 |mRatingBar.setStarCount(5);|The total number of stars|
@@ -85,15 +85,15 @@ xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
 |mRatingBar.setImagePadding(35);|the padding of the stars|
 
 
-#about
+# about
 Because the project need this function, but the android itself on the propagation of the Ratingbar support is very bad, so intend to write their own a, because my ability is limited, a lot of the function is not perfect, if you have a better solution, welcome to tell me, thank you
 
-#unsolved
+# unsolved
 - You can set the padding between the stars，But because the Ratingbar is rewriting Imageview, so distance setting still need to fine tune
 - You can set up half a star，but this method is very bad，Using this method is not recommended，Look at the code if you want to know the details，Please let me know if you have a good solution
 
 
-#Thank
+# Thank
 Thanks the  [Android_custom_ratingbarview][1] You can look at it  
 Thanks[lingguohui][2]for his code
 
@@ -101,7 +101,7 @@ Thanks[lingguohui][2]for his code
 [2]:https://github.com/lingguohui
 [3]:https://github.com/hedge-hog/RatingBar/blob/master/README_CH.md
 
-#License
+# License
 ```
 Copyright 2015 hedge_hog
 
